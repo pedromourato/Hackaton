@@ -1,0 +1,21 @@
+.nav{
+    background-image: url(../public/images/bg-header.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 110px;
+}
+
+.logo{
+    background-image: url(../public/images/SurfLine_Logo_ESC.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    align-content: center;
+    width: 40vw;
+    height: 110px;
+    margin-top: 20px;
+    position: absolute;
+}

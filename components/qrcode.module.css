@@ -1,0 +1,15 @@
+.sectionQrcode{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.qrcode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qrcode img{
+    width: 60vw;
+}

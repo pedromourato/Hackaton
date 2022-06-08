@@ -1,0 +1,52 @@
+.email{
+    height: 35px;
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color:#F8D15F;
+  }
+  .password{
+    height: 35px;
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color:#F8D15F;
+
+  }
+  .firstName{
+    width: 150px;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color:#F8D15F;
+ }
+ .lastName{
+   width: 150px;
+   height: 35px;
+   font-family: Arial, Helvetica, sans-serif;
+   border-color:#F8D15F;
+   text-shadow:none;
+ }
+ .birthday{
+    width: 150px;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color:#F8D15F;
+ }
+
+ .head1{
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ .para{
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ .buttonSign{
+    background-color: #27597A ;
+    width: 155px;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    border:none;
+    color: white
+ }
+ .buttonSign:hover {
+     background-color: #F8D15F;
+     color: #27597A 
+ }
