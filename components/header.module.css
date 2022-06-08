@@ -8,7 +8,10 @@
     width: 100vw;
     height: 110px;
 }
-
+.all{
+    min-height: 100%;
+    background-color: white;
+}
 .logo{
     background-image: url(../public/images/SurfLine_Logo_ESC.svg);
     background-repeat: no-repeat;

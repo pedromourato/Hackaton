@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "populate" : "node  populate/populate.mjs", 
+    "dev": "next dev -p 33020",
+    "build": "next build -p 33020",
+    "start": "next start -p 33020",
+    "lint": "next lint -p 33020"
   },
   "dependencies": {
     "mongodb": "^4.7.0",

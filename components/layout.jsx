@@ -3,11 +3,11 @@ import AulasAgendadas from "./AulasAgendadas";
 import Footer from "./footer";
 import Header from "./header";
 import SignIn from "./SignIn";
-
+import styles from "./header.module.css"
 export default function Layout({ children }){
     
     return(
-        <div>
+        <div className={styles.all}>
             <Header />
             <SignIn />
             <Agendar />
@@ -15,7 +15,7 @@ export default function Layout({ children }){
             
             <main>{children}</main>
 
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }

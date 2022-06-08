@@ -1,4 +1,6 @@
 import { useState } from "react"
+import styles from '../styles/Home.module.css'
+
 
 export default () => {
   const [agendarAula, setAula] = useState("")
@@ -60,27 +62,38 @@ export default () => {
   }
 
   return (
-    <div>
+    <div className={styles.buttons}>
       {!toggle && !toggle2 ?
-        <div>
-          <input value="Agendar Aulas" type="button" onClick={() => setToggle((prev) => !prev)} />
-          <input value="Comprar Aulas" type="button" onClick={() => setToggle2((prev) => !prev)} />
+        <div className={styles.buttons}>
+          <button value="Agendar Aulas" type="button" onClick={() => setToggle((prev) => !prev)}>Agendar Aulas</button>
+          <button value="Comprar Aulas" type="button" onClick={() => setToggle2((prev) => !prev)}>Comprar Aulas</button>
         </div> : ""}
       {toggle ?
-        <div>
+      <div>
+        <div className={styles.buttons}>
           <input value={agendarAula} type="date" onChange={(e) => setAula(() => e.target.value)} />
-          <input value="Submeter" type="button" onClick={submit} />
-          < input value="X" type="button" onClick={() => setToggle((prev) => !prev)} />
         </div>
+        <div className={styles.buttons}>
+          <button onClick={submit}>Agendar</button>
+          <button onClick={() => setToggle((prev) => !prev)} >Fechar</button>
+        </div>
+      </div>
         : ""
       }
 
       {toggle2 ?
-        <div>
-          <input type="Button" defaultValue="3" onClick={() => addCredits(3)} />
-          <input type="Button" defaultValue="5" onClick={() => addCredits(5)} />
-          <input type="Button" defaultValue="7" onClick={() => addCredits(7)} />
-          < input value="X" type="button" onClick={() => setToggle2((prev) => !prev)} />
+      <div>
+        <p className={styles.buttons}>Saldo: {localStorage.getItem("Credits")}</p>
+        <div className={styles.buttons}>
+          
+          <button defaultValue="3" onClick={() => addCredits(3)} > 3 </button>
+          <button  defaultValue="5" onClick={() => addCredits(5)} > 5 </button>
+        </div>
+        <br />
+        <div className={styles.buttons}>
+          <button defaultValue="7" onClick={() => addCredits(7)}> 7 </button>
+          <button onClick={() => setToggle2((prev) => !prev)}> Fechar </button>
+        </div>
         </div>
         : ""
       }

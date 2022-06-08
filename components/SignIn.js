@@ -63,20 +63,18 @@ export default function SignIn() {
     const [signUpShow, setSignUpShow] = useState(false);
     const [errs, setErrs] = useState("")
     return (
-        <div>
         <div className={styles.loginCaixa}>
+        <div>
             <div className={styles.caixa}>
             {!signUpShow && !loginShow ?
                 <div className={styles.botoes}>
                     <button className={styles.botaologin} onClick={() => setLoginShow((prev) => !prev)}>Login</button><br/>
                     <button className={styles.botaocadastro} onClick={() => setSignUpShow((prev) => !prev)}>Cadastro</button>
+                
                 </div>
                 : ""
             }
-            {signUpShow ? <div>
 
-
-            </div> : ""}
             {loginShow ?
                 <div><form onSubmit={(e) => { e.preventDefault() }}>
                     <div >
@@ -93,17 +91,12 @@ export default function SignIn() {
             }
 
             {signUpShow ?
-                <div>
+                <div className={styles.signUp}>
                     <form onSubmit={(e) => { e.preventDefault() }}>
-
-                        <p className={styles.para}>Name</p>
                         <input className={styles.email} value={createUser.name} onChange={(e) => setCreateUser({ ...createUser, name: e.target.value })} type="text" placeholder="Your Username"></input>
 
-                        <p className={styles.para}>Email</p>
                         <input className={styles.email} value={createUser.email} onChange={(e) => setCreateUser({ ...createUser, email: e.target.value })} type="email" placeholder="Your Email"></input>
-                        <p className={styles.para}>Password</p>
                         <input className={styles.password} value={createUser.password} onChange={(e) => setCreateUser({ ...createUser, password: e.target.value })} type="password" placeholder="Password"></input>
-                        <p className={styles.para}>Confirm Password</p>
                         <input className={styles.email} value={createUser.passwordConfirmation} onChange={(e) => setCreateUser({ ...createUser, passwordConfirmation: e.target.value })} type="password" placeholder="Confirm Password"></input>
                         <input className={styles.buttonSign} value="Register" onClick={submit2} type="submit"></input>
                         <input value="X" onClick={() => setSignUpShow((prev) => !prev)} type="submit"></input>
@@ -111,7 +104,6 @@ export default function SignIn() {
                     </form>
                 </div>
                 : ""
-
             }
 </div>
         </div>

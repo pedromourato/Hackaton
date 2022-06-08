@@ -8,7 +8,7 @@ export default function Home() {
   
   return (
     <div className={styles.container}>
-
+       
       <Qrcode className={styles.qrcode} text="TESTE" />
 
       <section className={styles.ligas}>
@@ -27,27 +27,10 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className={styles.buttons}>
-          <button>Agendar</button>
-          <button>Comprar</button>
-        </div>
-
-
       </section>
 
 
-      <footer className={styles.footer}>
-        <div className={styles.image1}>
-          <img src="./images/buondiBr.svg" />
-        </div>
-        <div className={styles.image2}>
-          <img src="./images/mercedesBr.svg" />
-        </div>
-        <div class={styles.image3}>
-          <img src="./images/meoBr.svg"/>
-        </div>
-
-      </footer>
+      
 
 
     </div>

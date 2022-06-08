@@ -81,6 +81,7 @@ font-family: 'Poppins', sans-serif;
  .loginCaixa{
    display: flex;
    justify-content: center;
+   height: 50%;
  }
 
  .caixa{
@@ -91,4 +92,23 @@ font-family: 'Poppins', sans-serif;
   width: 60vw;
   background-color: #EAF2F4;
   border-radius: 20px;
+ }
+
+ .arrumos{
+   display: flex;
+   justify-content: center;
+ }
+
+ .signUp{
+  
+  
+
+ }
+
+ .signUp form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
  }
