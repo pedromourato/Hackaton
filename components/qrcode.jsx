@@ -27,7 +27,7 @@ export default function Qrcode ({ text }) {
 
                 <p>Boa tarde, 
                     {
-                       name
+                    name
                     }
                     </p>
                 {/* DEFINIR BOA TARDE, BOA NOITE; ETC */}

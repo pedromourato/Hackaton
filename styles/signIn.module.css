@@ -50,3 +50,45 @@
      background-color: #F8D15F;
      color: #27597A 
  }
+
+ .botoes{
+   display: flex;
+   flex-direction: column;
+ }
+
+ .botaologin{
+   width: 150px;
+   height: 50px;
+   border-radius: 30px;
+   background-color: #27597A ;
+   border: none;
+   color: white;
+   font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+ }
+
+.botaocadastro{
+  border-top: 1px solid #5e5e5e;
+  margin-top: 15px;
+  background-color: transparent;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+
+
+ .loginCaixa{
+   display: flex;
+   justify-content: center;
+ }
+
+ .caixa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 60vw;
+  background-color: #EAF2F4;
+  border-radius: 20px;
+ }

@@ -64,10 +64,12 @@ export default function SignIn() {
     const [errs, setErrs] = useState("")
     return (
         <div>
+        <div className={styles.loginCaixa}>
+            <div className={styles.caixa}>
             {!signUpShow && !loginShow ?
-                <div>
-                    <button onClick={() => setLoginShow((prev) => !prev)}>Login</button>
-                    <button onClick={() => setSignUpShow((prev) => !prev)}>Cadastro</button>
+                <div className={styles.botoes}>
+                    <button className={styles.botaologin} onClick={() => setLoginShow((prev) => !prev)}>Login</button><br/>
+                    <button className={styles.botaocadastro} onClick={() => setSignUpShow((prev) => !prev)}>Cadastro</button>
                 </div>
                 : ""
             }
@@ -111,7 +113,8 @@ export default function SignIn() {
                 : ""
 
             }
-
+</div>
+        </div>
         </div>
 
 

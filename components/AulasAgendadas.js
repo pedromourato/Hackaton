@@ -25,9 +25,7 @@ export default function AulasAgendadas(){
 
     return (
         <div>
-            <ul>
-               
-            </ul>
+         
         </div>
     )
 }

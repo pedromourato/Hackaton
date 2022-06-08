@@ -13,3 +13,9 @@
 .qrcode img{
     width: 60vw;
 }
+
+.sectionQrcode p{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
